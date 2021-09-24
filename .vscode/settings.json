@@ -1,0 +1,15 @@
+{
+    "files.associations": {
+        "6.C": "cpp",
+        "assert.h": "c",
+        "10.C": "cpp",
+        "optional": "cpp",
+        "istream": "cpp",
+        "ostream": "cpp",
+        "system_error": "cpp",
+        "array": "cpp",
+        "tuple": "cpp",
+        "type_traits": "cpp",
+        "utility": "cpp"
+    }
+}
