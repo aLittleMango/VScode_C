@@ -2,7 +2,7 @@
  * @Description: 无重复字符的最大子串
  * @Author: aLittleMango
  * @Date: 2021-09-24 19:21:20
- * @LastEditTime: 2021-09-24 20:21:29
+ * @LastEditTime: 2021-09-25 15:42:39
  * @FilePath: \VScode_C\Demo\10-49\12.c
  */
 
@@ -27,6 +27,7 @@ int lengthOfLongestSubstring(char *s)
 
     return maxlen;
 }
+/*在力扣中执行报错*/
 
 void main()
 {
