@@ -2,9 +2,12 @@
  * @Description: 无重复字符的最大子串
  * @Author: aLittleMango
  * @Date: 2021-09-24 19:21:20
- * @LastEditTime: 2021-09-25 15:42:39
- * @FilePath: \VScode_C\Demo\10-49\12.c
+ * @LastEditTime: 2021-09-26 15:19:55
+ * @FilePath: \VScode_C\Demo\10-49\12_hard.c
  */
+#include <string.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 int lengthOfLongestSubstring(char *s)
 {
@@ -13,7 +16,7 @@ int lengthOfLongestSubstring(char *s)
     char map[256] = {0};
     map[(int)*(s + start)] = 1;
 
-    while (*(s + start) != 0)
+    while (*(s + end) != 0)
     {
         maxlen = maxlen > (end - start + 1) ? maxlen : (end - start + 1);
         ++end;
@@ -27,12 +30,11 @@ int lengthOfLongestSubstring(char *s)
 
     return maxlen;
 }
-/*在力扣中执行报错*/
 
 void main()
 {
     char str[80] = "abccb 1aeiaa";
     int num = lengthOfLongestSubstring(str);
-    printf("%d", num);
+    printf("%d\n", num);
     system("pause");
 }
