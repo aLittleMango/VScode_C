@@ -2,7 +2,7 @@
  * @Description: 最长回文子串
  * @Author: aLittleMango
  * @Date: 2021-09-26 12:53:08
- * @LastEditTime: 2021-09-26 15:21:35
+ * @LastEditTime: 2021-09-28 23:21:22
  * @FilePath: \VScode_C\Demo\10-49\14_amusing.c
  */
 
@@ -12,6 +12,9 @@
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
+
+//string 是定义一个字符串，存储的是一段如“abcd”的数据，而且最后还有一个结束符'\0';
+//char 是定义一个字符，存储一个字符，占一个字节。
 
 struct huiwen
 {
@@ -47,9 +50,6 @@ char *longestPalindrome(char *s)
     s[max.end + 1] = '\0';
     return &s[max.start];
 }
-
-//string 是定义一个字符串，存储的是一段如“abcd”的数据，而且最后还有一个结束符'\0';
-//char 是定义一个字符，存储一个字符，占一个字节。
 
 void main()
 {
